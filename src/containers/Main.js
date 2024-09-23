@@ -16,7 +16,7 @@ import ScrollToTopButton from "./topbutton/Top";
 import Twitter from "./twitter-embed/twitter";
 import Profile from "./profile/Profile";
 import SplashScreen from "./splashScreen/SplashScreen";
-import {splashScreen} from "../portfolio";
+import {splashScreen, podcastSection} from "../portfolio"; // Add podcastSection here
 import {StyleProvider} from "../contexts/StyleContext";
 import {useLocalStorage} from "../hooks/useLocalStorage";
 import "./Main.scss";
@@ -62,7 +62,7 @@ const Main = () => {
             <Blogs />
             <Talks />
             <Twitter />
-            <Podcast />
+            {podcastSection.display && <Podcast />} {/* Make Podcast conditional */}
             <Profile />
             <Footer />
             <ScrollToTopButton />

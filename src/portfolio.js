@@ -23,10 +23,10 @@ const greeting = {
   username: "Vishal Gawade",
   title: "Hi all, I'm Vishal",
   subTitle: emoji(
-    "A passionate Full Stack Software Engineer 🚀 building scalable systems across cloud, AI, and DevOps. I blend technical expertise with collaborative spirit to create innovative solutions for real-world challenges. Always eager to learn and expand my skills in diverse tech landscapes!"
+    "A Software Engineer 🛠️. If you think Engineering is only about code, let me change your mind! I believe that successful engineering practices come from building scalable, reliable systems, But it’s the teamwork behind the code that turns potential into reality."
   ),
   resumeLink:
-    "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
+    "https://drive.google.com/file/d/1QFFbg795ujOQfPcJDnnUzz4ApWnt_RKG/view?usp=drive_link", // Set to empty to hide the button
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -36,6 +36,7 @@ const socialMediaLinks = {
   github: "https://github.com/VishalGawade1",
   linkedin: "https://www.linkedin.com/in/vishal2k/",
   gmail: "vgawade@hawk.iit.edu",
+  discord: "https://discord.com/users/492222490651787264",
   //gitlab: "https://gitlab.com/saadpasta",
   //facebook: "https://www.facebook.com/saad.pasta7",
   //medium: "https://medium.com/@saadpasta",
@@ -51,13 +52,9 @@ const skillsSection = {
   title: "What I do",
   subTitle: "CRAZY SOFTWARE ENGINEER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
-    emoji(
-      "⚡ Developing highly interactive and optimized frontends and backend systems to streamline workflows and enhance user experience."
-    ),
-    emoji("⚡  Building and scaling cloud infrastructure across AWS, GCP, and Azure, ensuring seamless integration and efficient performance."),
-    emoji(
-      "⚡ Integrating third-party services such as AWS, Firebase, and DigitalOcean to supercharge app functionality."
-    )
+    emoji("⚡Developing scalable backends with Python and Java for optimized performance."),
+    emoji("⚡Managing cloud infrastructure on AWS and Azure with Docker for seamless scaling."),
+    emoji("⚡ Integrating MySQL and MongoDB for efficient data management and communication.")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -71,7 +68,15 @@ softwareSkills: [
   { skillName: "Machine Learning", fontAwesomeClassname: "fas fa-robot" },
   { skillName: "AI", fontAwesomeClassname: "fas fa-brain" },
   { skillName: "MySQL", fontAwesomeClassname: "fas fa-database" },
-  { skillName: "MongoDB", fontAwesomeClassname: "fas fa-leaf" }
+  { skillName: "MongoDB", fontAwesomeClassname: "fas fa-leaf" },
+  { skillName: "React", fontAwesomeClassname: "fab fa-react" },
+  { skillName: "JavaScript", fontAwesomeClassname: "fab fa-js" },
+  { skillName: "Django/Flask", fontAwesomeClassname: "fas fa-flask" },
+  { skillName: "Azure", fontAwesomeClassname: "fab fa-microsoft" },
+  { skillName: "Docker", fontAwesomeClassname: "fab fa-docker" },
+  { skillName: "HTML", fontAwesomeClassname: "fab fa-html5" },
+  { skillName: "CSS", fontAwesomeClassname: "fab fa-css3-alt" },
+  { skillName: "Redis", fontAwesomeClassname: "fas fa-memory" }
 ],
   display: true // Set false to hide this section, defaults to true
 };
@@ -108,16 +113,16 @@ const techStack = {
   viewSkillBars: true, //Set it to true to show Proficiency Section
   experience: [
     {
-      Stack: "Frontend/Design", //Insert stack or technology you have experience in
+      Stack: "Backend", //Insert stack or technology you have experience in
       progressPercentage: "90%" //Insert relative proficiency in percentage
     },
     {
-      Stack: "Backend",
+      Stack: "Programming",
       progressPercentage: "70%"
     },
     {
-      Stack: "Programming",
-      progressPercentage: "60%"
+      Stack: "Frontend/Design",
+      progressPercentage: "60%" 
     }
   ],
   displayCodersrank: true // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -236,7 +241,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certification",
-          url: "" // Add the URL to your AWS certification
+          url: "https://www.credly.com/badges/b31698b6-ad61-4f5e-b81f-2f0926ce930e/" // Add the URL to your AWS certification
         }
       ]
     },
@@ -249,7 +254,7 @@ const achievementSection = {
       footerLink: [
         {
           name: "View Certification",
-          url: "" // Add the URL to your HashiCorp certification
+          url: "https://www.credly.com/badges/54bc0173-fea7-427d-82e2-1828e88192ed/public_url" // Add the URL to your HashiCorp certification
         }
       ]
     }
@@ -304,11 +309,30 @@ const talkSection = {
 
 const podcastSection = {
   title: emoji("Podcast 🎙️"),
-  subtitle: "I LOVE TO TALK ABOUT MYSELF AND TECHNOLOGY",
+  subtitle: "Want to Hear About My Projects? Tune in to My Podcast!",
 
-  // Please Provide with Your Podcast embeded Link
-  podcast: [
-    "https://open.spotify.com/embed/episode/3sUSPUf1zz1s8018f9bi3s"
+  podcasts: [
+    {
+      title: "AI FlowStream",
+      date: "Sep 21",
+      link: "https://open.spotify.com/embed/episode/3sUSPUf1zz1s8018f9bi3s"
+    },
+    {
+      title: "Empowering Safety Through Technology",
+      date: "Sep 22",
+      link: "https://open.spotify.com/embed/episode/3J6l9nDwFmqq9Bq6KdT0qM"
+    },
+    {
+      title: "Face Recognition – The Future of Security",
+      date: "Sep 22",
+      link: "https://open.spotify.com/embed/episode/634q99QcZ1A0bXfuEF0pzj"
+    },
+    {
+      title: "Harnessing Blockchain – Plot Generation in Chia",
+      date: "Sep 22",
+      link: "https://open.spotify.com/embed/episode/7uCGE1ZbxxnEROFncX6R7X"
+    }
+    // Add new podcasts here
   ],
   display: true // Set false to hide this section, defaults to true
 };
